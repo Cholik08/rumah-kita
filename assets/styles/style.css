@@ -15,6 +15,28 @@ body{
     }
 }
 
+@keyframes animasi_right{
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100%{
+        opacity:1;
+        transform:translateX(0px);
+    }
+}
+
+@keyframes animasi_left{
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100%{
+        opacity:1;
+        transform:translateX(0px);
+    }
+}
+
 footer{
     color: white;
     background-color: rgb(105, 107, 244);
@@ -41,6 +63,14 @@ footer i{
 
 .jumbotron p{
     margin-top:-10px;
+}
+
+.jumbotron p, .jumbotron h1, .btn-kontak{
+    animation: animasi_down 0.8s;
+}
+
+.about p{
+    animation: animasi_right 0.8s;
 }
 
 nav{
@@ -148,6 +178,17 @@ nav a:hover{
     margin-right: 40px;
 }
 
+.card-1{
+    animation: animasi_right 0.8s;
+}
+
+.card-2{
+    animation: animasi_down 0.8s;
+}
+
+.card-3{
+    animation: animasi_left 0.8s;
+}
 .card-title{
     display: flex;
     justify-content: center;
@@ -244,6 +285,14 @@ nav a:hover{
     font-size: 1.8rem;
     color: rgb(105, 107, 244);
     margin-right: 5px;
+}
+
+.kontak-section-1{
+    animation: animasi_right 0.8s;
+}
+
+.kontak-section-2{
+    animation: animasi_down 0.8s;
 }
 
 @media only screen and (max-width:768px){
